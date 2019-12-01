@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Recipes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row >
+      <ion-col *ngFor="let recipe of recipes" [routerLink]="['./', recipe.id]" size-md= "3">
+        <ion-card>
+          <ion-card-content>
+              <ion-img [src]="recipe.img" [alt]="'image'"></ion-img>
+              <ion-label>{{recipe.name}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+          <!-- <ion-item *ngFor="let recipe of recipes" [routerLink]="['./', recipe.id]">
+            <ion-thumbnail>
+              <ion-img [src]="recipe.img" [alt]="'image'"></ion-img>
+            </ion-thumbnail>
+            <ion-label>{{recipe.name}}</ion-label>
+          </ion-item> -->
+</ion-content>

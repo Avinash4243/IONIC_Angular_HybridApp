@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="primary" class="ion-text-center">
+    <ion-title>
+      Budget Planner
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-card>
+          <ion-card-header>
+           <ion-card-title color="dark">New Expense</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>            
+              <ion-item>
+                  <ion-label position="floating">Expense</ion-label>
+                    <ion-input type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label position="floating">Amount</ion-label>
+                  <ion-input type="number"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label position="floating">Datetime</ion-label>
+                    <ion-datetime></ion-datetime>
+                </ion-item>
+                <div class="ion-text-end ion-margin-vertical">
+                    <ion-button size="small" fill="outline" color="danger"><ion-icon slot="start" name="close"></ion-icon>Clear</ion-button>
+                    <ion-button size="small" color="primary"><ion-icon slot="end" name="add-circle"></ion-icon>Add Expense</ion-button>
+                </div>
+          </ion-card-content>
+            
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+          <ion-list id="expenses-list">
+
+          </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  
+    
+  
+  
+  
+</ion-content>
+<ion-footer translucent="false">
+  <ion-toolbar color="light ion-text-end" slot="start">
+    <ion-title size="small">
+      @copyright 2019
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>
