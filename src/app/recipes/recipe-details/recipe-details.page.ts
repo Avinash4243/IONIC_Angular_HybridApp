@@ -30,8 +30,8 @@ export class RecipeDetailsPage implements OnInit {
 
   deleteRecipe(recipeId) {
     this.alert.create({
-    header: 'Are you sure?', 
-    message: 'Do you really want to delete this recipe?', 
+    header: 'Are you sure?',
+    message: 'Do you really want to delete this recipe?',
     buttons: [{
       text: 'Cancel',
       role: 'cancel'
